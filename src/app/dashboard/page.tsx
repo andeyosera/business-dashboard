@@ -118,7 +118,7 @@ export default function DashboardPage() {
         {/* Header */}
         <div style={{ marginBottom: '2rem' }}>
           <h1 style={{ fontFamily: 'Syne', fontSize: '1.5rem', fontWeight: 700, color: 'var(--white)', marginBottom: '0.3rem' }}>
-            Good day, {session?.user?.name?.split(' ')[0]} 👋
+            Good day, {session?.user?.name?.split(' ')[0]}! 👋
           </h1>
           <p style={{ color: 'var(--muted)', fontSize: '0.875rem' }}>Here's what's happening with your business today.</p>
         </div>

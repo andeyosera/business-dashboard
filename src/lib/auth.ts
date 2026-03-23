@@ -36,7 +36,7 @@ export const authOptions: NextAuthOptions = {
     async jwt({ token, user }) {
       if (user) {
         token.id = user.id
-        token.business = (user as any).business
+        token.business = (user as { business?: string }).business
       }
       return token
     },

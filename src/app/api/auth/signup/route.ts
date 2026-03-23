@@ -24,7 +24,7 @@ export async function POST(req: Request) {
       { message: 'Account created!', user: { id: user.id, email: user.email } },
       { status: 201 }
     )
-  } catch (err) {
+  } catch {
     return NextResponse.json({ message: 'Server error.' }, { status: 500 })
   }
 }
